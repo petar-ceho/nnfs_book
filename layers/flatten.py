@@ -11,9 +11,9 @@ class Flatten:
         (self.m,self.n_h,self.n_w,self.n_c)=inputs.shape
         self.output=inputs.reshape(self.m,-1)
 
-    #flatten from [N,-1] to [m,n_h,n_w,_nc] previous shape || dvalues is to not brake the code in model class  
+    #flatten from [N,-1] to [m,n_h,n_w,_nc] previous shape ||   
     def backward(self,dvalues):
-        self.dinputs=self.inputs.reshape(self.m,self.n_h,self.n_w,self.n_c)        
+        self.dinputs=dvalues.reshape(self.m,self.n_h,self.n_w,self.n_c)        
 
 
 

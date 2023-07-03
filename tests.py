@@ -147,7 +147,7 @@ class TestConv3D(unittest.TestCase):
         self.assertEqual(np.allclose(pool3d.dinputs,input_grad),1,'dipnuts values are not close')
 
 
-    
+        
 
 
 if __name__=='__main__':
