@@ -301,7 +301,7 @@ class Model:
         # Pass output of the previous object as a parameter
         for layer in self.layers:
             layer.forward(layer.prev.output, training)
-
+        
         # "layer" is now the last object from the list,
         # return its output
         return layer.output
