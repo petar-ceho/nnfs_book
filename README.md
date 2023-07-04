@@ -7,7 +7,7 @@ This repository is contains the code from the book NNFS([link](https://nnfs.io/)
 #### Convolutions:
 Convolutions classes are implemented with shapes conv2d[m,h,w] and conv3d[m,h,w,nc] current suported parameters are padding(zero-padding) and strides,weights parameters takes a tupple as input with shape 2d[h,w,nc_out] and 3d[h,w,nc_in,nc_out],biases int for shape that should match nc_out from weights.
 
-Tests are written for zero-padding(2d,3d) and conv2d,conv3d(forward,backward) and its performed by initializing inputs/parameters in pytorch performing the forward/backward in pytorch and our conv implementation with same params,and comparing the values with np.allclose() because of numerical instability.
+Tests are written for zero-padding(2d,3d) and conv2d,conv3d(forward,backward) and its performed by initializing inputs/parameters in pytorch performing the forward/backward in pytorch and our conv implementation with same params,and comparing the values and gradients with np.allclose() because of numerical instability.
      
 code example conv3d:
 ```python
@@ -22,7 +22,7 @@ conv3d.backward(dvalues)
 Currently maxpool(2d,3d) are fully implemented with parameters f(filter size) and stride,if we take an input[m,n_h_prev,n_w_prev,nc] the output is gonna be [m,nh,nw,nc],nh/nw are calcuated 
 ((n_h_prev-f)/stride)+1
 
-Test are written the same way as conv tests,by performing forward/backward pass in pytorch and our maxpool layers with same input/params and comparing the output values and grad values with np.allclose()
+Test are written the same way as conv tests,by performing forward/backward pass in pytorch and our maxpool layers with same input/params and comparing the output values and gradients  with np.allclose()
 
 code example maxpool3d:
 ```python
