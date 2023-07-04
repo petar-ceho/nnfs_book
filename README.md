@@ -2,7 +2,7 @@
 
 This repository is contains the code from the book NNFS([link](https://nnfs.io/)) with  arranged the chapter lectures into packages so that its easier to use the code by just importing them.
 
-#### Enhancement
+### Enhancement
 
 #### Convolutions:
 Convolutions classes are implemented with shapes conv2d[m,h,w] and conv3d[m,h,w,nc] current suported parameters are padding(zero-padding) and strides,weights parameters takes a tupple as input with shape 2d[h,w,nc_out] and 3d[h,w,nc_in,nc_out],biases int for shape that should match nc_out from weights.
