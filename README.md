@@ -1,6 +1,6 @@
 ### Neural Networks from Scratch (NNFS) book code
 
-This repository is contains the code from the book NNFS([link](https://nnfs.io/)) with  arranged the chapter lectures into packages so that its easier to use the code by just importing them.
+This repository is contains the code from the book NNFS([link](https://nnfs.io/)) with  chapter arranged into packages so that its easier to use the code by just importing them.
 
 ### Enhancement
 
@@ -34,7 +34,7 @@ pool3d.backward(dvalues)
 ```
 
 #### Models:
-Mnist via cnn's is done and is mostly inspired by LeNet 5 architecture except we modified the architecture to use max-pool instead of average-pool and using Relu as activation function.
+Mnist-cnn  is done and is mostly inspired by LeNet 5 architecture except we modified the architecture to use max-pool instead of average-pool and using Relu as activation function.
 
 Cifar10 is done are currently working on finding the optimal solution for hyper-parameters to make the network train faster with less resources/layers.
 
