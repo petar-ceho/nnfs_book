@@ -17,6 +17,37 @@ dvalues=np.ones_like(conv3d.output)
 conv3d.backward(dvalues)
 ```
 
+#### Max pooling:
+Currently maxpool(2d,3d) are fully implemented with parameters f(filter size) and stride,if we take an input[m,n_h_prev,n_w_prev,nc] the output is gonna be [m,nh,nw,nc],nh/nw are calcuated 
+((n_h_prev-f)/stride)+1
+
+Test are written the same way as conv tests,by performing forward/backward pass in pytorch and our maxpool layers with same input/params and comparing the output values and grad values with np.allclose()
+
+code example maxpool3d:
+```python
+inputs=np.random.randn(1,3,3,1)
+pool3d=MaxPooling3D(2,stride=1)
+pool3d.forward(input_permuted,training=True)
+dvalues=np.ones_like(input_permuted)
+pool3d.backward(dvalues)
+```
+
+#### Models:
+Mnist via cnn's is done and is mostly inspired by LeNet 5 architecture except we modified the architecture to use max-pool instead of average-pool and using Relu as activation function.
+
+Cifar10 is done are currently working on finding the optimal solution for hyper-parameters to make the network train faster with less resources/layers.
+
+     
+
+
+           
+   
+
+
+
+
+
+            
 
 
 
