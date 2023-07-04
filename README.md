@@ -10,8 +10,8 @@ Tests are written for zero-padding(2d,3d) and conv2d,conv3d(forward,backward) an
      
 code example conv3d:
 ```python
+inputs=np.random.randn(5,10,10,3) 
 conv3d=Conv3D([3,3,3,6],6,padding=1,stride=1)
-conv3d.set_params(weights,biases)
 conv3d.forward(inputs,training=True)
 dvalues=np.ones_like(conv3d.output)
 conv3d.backward(dvalues)
