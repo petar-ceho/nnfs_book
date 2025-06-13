@@ -1,4 +1,4 @@
-> 🧪 **Note**: This is part of an experimental extension to the original [NNFS](https://nnfs.io) book code, maintained as a personal fork.
+> 🧪 **Note**: This repository is an experimental project that extends the original [NNFS](https://nnfs.io) book code. It is maintained as a personal fork with the goal of exploring additional deep learning features—such as convolutional layers, pooling, and CNN-based models.
 
 ### Enhancements
 
