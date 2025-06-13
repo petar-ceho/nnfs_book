@@ -1,5 +1,6 @@
 import numpy as np
 
+# NOTE: since pytorch uses conv2D for both grayscale and RGB this was a mistake a wrong naming .... so probably going to rewrite this one time in cuda .... 
 class Conv3D:
     
     """    
