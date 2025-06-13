@@ -1,4 +1,4 @@
-> 🧪 **Note**: This is part of an experimental extension to the original [NNFS](https://nnfs.io) book code, maintained as a personal fork by [petar-ceho](https://github.com/petar-ceho) under `nnfs_book`. It explores additional deep learning features and testing strategies.
+> 🧪 **Note**: This is part of an experimental extension to the original [NNFS](https://nnfs.io) book code, maintained as a personal fork.
 
 ### Enhancements
 
